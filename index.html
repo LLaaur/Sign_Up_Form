@@ -19,8 +19,6 @@
     
     <div class="form-page">
 
-            
-
             <div class="image">
 
                 <div class="logo-container">
@@ -33,6 +31,7 @@
             </div>
 
 
+
         <div class="form-container">
 
             <div class="headers-container">
@@ -43,54 +42,67 @@
 
             </div>
 
-            
-            <div class="form-content">
+                <div class="form-content">
 
-                <div>  
-                    <h3>Let's do this.</h3>
-                    <p>Fields marked with an asterisk are (*) required.</p>
-                </div>  
+                    <div>  
+                        <h3>Let's do this.</h3>
+                        <p>All fields are required.</p>
+                    </div>  
 
 
-                <form action="#0" method="get"> 
+                    <form action="#0" method="get"> 
 
-                    <div class="input first-name">
-                        <label for="fName">FIRST NAME <p>*</p> </label>
-                        <input type="text" name="fName" id="fName">
+                        <div class="input first-name">
+                            <input type="text" name="fName" id="fName" autocomplete="off" required>
+                            <label for="fName">
+                                <span>FIRST NAME</span>
+                            </label>
+                        </div>
+
+                        <div class="input last-name">
+                            <input type="text" name="lName" id="lName" autocomplete="off" required>
+                            <label for="lName">
+                                <span>LAST NAME</span>
+                            </label>
+                            
+                        </div>
+
+                        <div class="input email">
+                            <input type="email" name="mail" id="mail" autocomplete="off" required>
+                            <label for="mail">
+                                <span>EMAIL</span>
+                            </label>
+                        </div>
+
+                        <div class="input phone">
+                            <input type="tel" name="phoneNr" id="phoneNumber" autocomplete="off" required>
+                            <label for="phoneNumber">
+                                <span>PHONE NUMBER</span>
+                            </label>
+                        </div>
+
+                        <div class="input pwd">
+                            <input type="password" name="password" id="pwd" required>
+                            <label for="pwd">
+                                <span>PASSWORD</span>
+                            </label>
+                        </div>
+
+                        <div class="input pwd">
+                            <input type="password" name="password" id="pwd-confirm" required>
+                            <label for="pwd-confirm">
+                                <span>CONFIRM PASSWORD</span>
+                            </label>
+                        </div>
+
+                    </form>
+
+                    <div class="btn-container">
+                        <button type="submit">Submit</button>
                     </div>
 
-                    <div class="input last-name">
-                        <label for="lName">LAST NAME <p>*</p> </label>
-                        <input type="text" name="lName" id="lName">
-                    </div>
-
-                    <div class="input email">
-                        <label for="email">EMAIL <p>*</p> </label>
-                        <input type="email" name="mail" id="email">
-                    </div>
-
-                    <div>
-                        <label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="tel" name="phoneNr" id="phoneNumber">
-                    </div>
-
-                    <div class="input pwd">
-                        <label for="pwd">PASSWORD <p>*</p> </label>
-                        <input type="password" name="password" id="pwd">
-                    </div>
-
-                    <div class="input pwd">
-                        <label for="pwd">CONFIRM PASSWORD <p>*</p> </label>
-                        <input type="password" name="password" id="pwd">
-                    </div>
-
-                </form>
-
-            </div>
-        
+                </div>
         </div>
-
-    </div>
 
 </body>
 
