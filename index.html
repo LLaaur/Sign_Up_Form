@@ -75,21 +75,21 @@
                         </div>
 
                         <div class="input phone">
-                            <input type="tel" name="phoneNr" id="phoneNumber" autocomplete="off" required>
+                            <input type="tel" name="phoneNr" id="phoneNumber" autocomplete="off" required minlength="7" maxlength="20">
                             <label for="phoneNumber">
                                 <span>PHONE NUMBER</span>
                             </label>
                         </div>
 
                         <div class="input pwd">
-                            <input type="password" name="password" id="pwd" required>
+                            <input type="password" name="password" id="pwd" required minlength="8" onchange="pwdMatch()">
                             <label for="pwd">
                                 <span>PASSWORD</span>
                             </label>
                         </div>
 
                         <div class="input pwd">
-                            <input type="password" name="password" id="pwd-confirm" required>
+                            <input type="password" name="password-confirm" id="pwd-confirm" required minlength="8" onchange="pwdMatch()">
                             <label for="pwd-confirm">
                                 <span>CONFIRM PASSWORD</span>
                             </label>
