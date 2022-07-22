@@ -129,18 +129,45 @@ input{
 .btn-container{
     width: 65%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8rem;
+    align-items: center;
 }
 
 button{
     padding: 1rem 2rem;
     font-size: 1.2rem;
-    background: #922cdc;
+    background: #a80003;
     color: white;
     letter-spacing: 1px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
+    width: 28%;
+    font-weight: 600;
+}
+
+button:hover{
+    background-color: white;
+    color: #a80003;
+    transition: 0.5s all;
+}
+
+.log{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.log a{
+    color: #06abda;
+    text-decoration: none;
+}
+
+.log a:visited{
+    color: blue;
 }
 
 label{
@@ -163,7 +190,7 @@ span{
 label::after{
     content: '';
     position: absolute;
-    bottom: -15px;
+    bottom: -1rem;
     width: 235px;
     height: 100%;
     border-bottom: 3px solid #ff3300;
